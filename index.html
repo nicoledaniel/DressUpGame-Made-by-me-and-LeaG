@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="images4/icon.png" type="image/png" />
+  <title>Glam Girl Dress-Up</title>
+</head>
+
+<body>
+  <h1 id="gameTitle">Glam Girl Dress-Up</h1>
+
+  <div id="box">
+    <div id="backdrop">
+      <div id="face"></div>
+      <div id="shirt"></div>
+      <div id="hair"></div>
+      <div id="girl"></div>
+      <div id="shoes"></div>
+      <div id="bottoms"></div>
+      <div id="skin"></div>
+      <div id="bangs"></div>
+    </div>
+
+    <div class="listofoptions">
+      <section class="optionCard">
+        <h3 class="sectionTitle">BANGS</h3>
+        <div class="optionGrid eight">
+          <button class="itemBtn bangsBtn bangs1Preview" onclick="setbangs(1)"><img src="./images4/bangs1.png" alt="Bangs option 1"></button>
+          <button class="itemBtn bangsBtn bangs2Preview" onclick="setbangs(2)"><img src="./images4/bangs2.png" alt="Bangs option 2"></button>
+          <button class="itemBtn bangsBtn bangs3Preview" onclick="setbangs(3)"><img src="./images4/bangs3.png" alt="Bangs option 3"></button>
+          <button class="itemBtn bangsBtn bangs4Preview" onclick="setbangs(4)"><img src="./images4/bangs4.png" alt="Bangs option 4"></button>
+          <button class="itemBtn bangsBtn bangs5Preview" onclick="setbangs(5)"><img src="./images4/bangs5.png" alt="Bangs option 5"></button>
+          <button class="itemBtn bangsBtn bangs6Preview" onclick="setbangs(6)"><img src="./images4/bangs6.png" alt="Bangs option 6"></button>
+          <button class="itemBtn bangsBtn bangs7Preview" onclick="setbangs(7)"><img src="./images4/bangs7.png" alt="Bangs option 7"></button>
+          <button class="itemBtn bangsBtn bangs8Preview" onclick="setbangs(8)"><img src="./images4/bangs8.png" alt="Bangs option 8"></button>
+        </div>
+      </section>
+
+      <section class="optionCard">
+        <h3 class="sectionTitle">HAIR</h3>
+        <div class="optionGrid eight">
+          <button class="itemBtn hairBtn hair1Preview" onclick="sethair(1)"><img src="./images4/hair0.png" alt="Hair option 1"></button>
+          <button class="itemBtn hairBtn hair2Preview" onclick="sethair(2)"><img src="./images4/hair1.png" alt="Hair option 2"></button>
+          <button class="itemBtn hairBtn hair3Preview" onclick="sethair(3)"><img src="./images4/hair2.PNG" alt="Hair option 3"></button>
+          <button class="itemBtn hairBtn hair4Preview" onclick="sethair(4)"><img src="./images4/hair3.png" alt="Hair option 4"></button>
+          <button class="itemBtn hairBtn hair5Preview" onclick="sethair(5)"><img src="./images4/hair4.png" alt="Hair option 5"></button>
+          <button class="itemBtn hairBtn hair6Preview" onclick="sethair(6)"><img src="./images4/hair5.png" alt="Hair option 6"></button>
+          <button class="itemBtn hairBtn hair7Preview" onclick="sethair(7)"><img src="./images4/hair6.png" alt="Hair option 7"></button>
+          <button class="itemBtn hairBtn hair8Preview" onclick="sethair(8)"><img src="./images4/hair7.png" alt="Hair option 8"></button>
+        </div>
+      </section>
+
+      <section class="optionCard">
+        <h3 class="sectionTitle">SHIRT</h3>
+        <div class="optionGrid eight">
+          <button class="itemBtn shirtBtn" onclick="setshirt(1)"><img src="./images4/shirt1.PNG" alt="Shirt option 1"></button>
+          <button class="itemBtn shirtBtn smallShirt" onclick="setshirt(2)"><img src="./images4/shirt2.PNG" alt="Shirt option 2"></button>
+          <button class="itemBtn shirtBtn" onclick="setshirt(3)"><img src="./images4/shirt3.PNG" alt="Shirt option 3"></button>
+          <button class="itemBtn shirtBtn" onclick="setshirt(4)"><img src="./images4/shirt4.PNG" alt="Shirt option 4"></button>
+          <button class="itemBtn shirtBtn" onclick="setshirt(5)"><img src="./images4/shirt5.PNG" alt="Shirt option 5"></button>
+          <button class="itemBtn shirtBtn" onclick="setshirt(6)"><img src="./images4/shirt6.PNG" alt="Shirt option 6"></button>
+          <button class="itemBtn shirtBtn shirt7Preview" onclick="setshirt(7)"><img src="./images4/shirt7.PNG" alt="Shirt option 7"></button>
+          <button class="itemBtn shirtBtn shirt8Preview" onclick="setshirt(8)"><img src="./images4/shirt8.PNG" alt="Shirt option 8"></button>
+        </div>
+      </section>
+
+      <section class="optionCard">
+  <h3 class="sectionTitle">BOTTOMS</h3>
+
+  <div class="optionGrid six bottomsGrid">
+    <button class="itemBtn bottomsBtn pantsStyle1" onclick="setbottoms(1)">
+      <img src="./images4/bottoms1.png" alt="Bottoms option 1">
+    </button>
+
+    <button class="itemBtn bottomsBtn pantsStyle1" onclick="setbottoms(2)">
+      <img src="./images4/bottoms2.png" alt="Bottoms option 2">
+    </button>
+
+    <button class="itemBtn bottomsBtn pantsStyle2" onclick="setbottoms(3)">
+      <img src="./images4/bottoms3.png" alt="Bottoms option 3">
+    </button>
+
+    <button class="itemBtn bottomsBtn pantsStyle3" onclick="setbottoms(4)">
+      <img src="./images4/bottoms4.png" alt="Bottoms option 4">
+    </button>
+
+    <button class="itemBtn bottomsBtn pantsStyle4" onclick="setbottoms(5)">
+      <img src="./images4/bottoms5.png" alt="Bottoms option 5">
+    </button>
+
+    <button class="itemBtn bottomsBtn pantsStyle6" onclick="setbottoms(6)">
+      <img src="./images4/bottoms6.png" alt="Bottoms option 6">
+    </button>
+  </div>
+</section>
+
+      <section class="optionCard">
+        <h3 class="sectionTitle">SHOES</h3>
+        <div class="optionGrid six">
+          <button class="itemBtn shoesBtn bigShoe" onclick="setshoes(1)"><img src="./images4/shoes1.png" alt="Shoes option 1"></button>
+          <button class="itemBtn shoesBtn bigShoe" onclick="setshoes(2)"><img src="./images4/shoes2.PNG" alt="Shoes option 2"></button>
+          <button class="itemBtn shoesBtn" onclick="setshoes(3)"><img src="./images4/shoes3.png" alt="Shoes option 3"></button>
+          <button class="itemBtn shoesBtn mediumShoe" onclick="setshoes(4)"><img src="./images4/shoes4.PNG" alt="Shoes option 4"></button>
+          <button class="itemBtn shoesBtn" onclick="setshoes(5)"><img src="./images4/shoes5.PNG" alt="Shoes option 5"></button>
+          <button class="itemBtn shoesBtn shoes6Preview" onclick="setshoes(6)"><img src="./images4/shoes6.PNG" alt="Shoes option 6"></button>
+        </div>
+      </section>
+
+      <section class="optionCard">
+        <h3 class="sectionTitle">FACE</h3>
+        <div class="optionGrid six">
+          <button class="itemBtn faceBtn" onclick="setface(1)"><img src="./images4/face1.png" alt="Face option 1"></button>
+          <button class="itemBtn faceBtn" onclick="setface(2)"><img src="./images4/face2.png" alt="Face option 2"></button>
+          <button class="itemBtn faceBtn" onclick="setface(3)"><img src="./images4/face3.png" alt="Face option 3"></button>
+          <button class="itemBtn faceBtn" onclick="setface(4)"><img src="./images4/face4.PNG" alt="Face option 4"></button>
+          <button class="itemBtn faceBtn" onclick="setface(5)"><img src="./images4/face5.PNG" alt="Face option 5"></button>
+          <button class="itemBtn faceBtn face6Preview" onclick="setface(6)"><img src="./images4/face6.PNG" alt="Face option 6"></button>
+        </div>
+      </section>
+
+      <section class="optionCard skinCard">
+        <h3 class="sectionTitle">SKIN</h3>
+        <div class="optionGrid six">
+          <button class="itemBtn skinBtn" onclick="setskin(1)"><img src="./images4/skin1.png" alt="Skin option 1"></button>
+          <button class="itemBtn skinBtn" onclick="setskin(2)"><img src="./images4/skin2.PNG" alt="Skin option 2"></button>
+          <button class="itemBtn skinBtn" onclick="setskin(3)"><img src="./images4/skin3.PNG" alt="Skin option 3"></button>
+          <button class="itemBtn skinBtn" onclick="setskin(4)"><img src="./images4/skin4.PNG" alt="Skin option 4"></button>
+          <button class="itemBtn skinBtn" onclick="setskin(5)"><img src="./images4/skin5.PNG" alt="Skin option 5"></button>
+          <button class="itemBtn skinBtn" onclick="setskin(6)"><img src="./images4/skin6.PNG" alt="Skin option 6"></button>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div id="musicPlayer" onclick="toggleMusic()">
+    <img id="recordIcon" src="./images4/recordmute.png" alt="Music toggle" />
+  </div>
+
+  <audio id="bgMusic"></audio>
+
+  <div id="githubCredits">
+    <a href="https://github.com/nicoledaniel" target="_blank">
+      <img src="./images4/nicole.png" alt="Nicole GitHub" />
+      <span>Nicole Daniel</span>
+    </a>
+
+    <a href="https://github.com/LeatheG" target="_blank">
+      <img src="./images4/Lea.png" alt="Lea GitHub" />
+      <span>Lea Goretoy</span>
+    </a>
+  </div>
+
+  <script src="./main.js"></script>
+</body>
+</html>
